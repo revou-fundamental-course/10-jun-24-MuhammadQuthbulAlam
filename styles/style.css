@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #007bff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+.input-box {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+    padding: 10px;
+    height: 100px;
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.card {
+  background-color: #007bff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #0056b3;
+  text-align: center;
+  color: white;
+}
+
+nav {
+   background-color: #0056b3;
+   padding: 5px;
+   position: sticky;
+   top: 10px;
+}
+
+main {
+    padding: 25px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+
+header {
+  display: inline;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  footer {
+    font-size: small;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  footer {
+    font-size: small;
+  }
+}
+}
